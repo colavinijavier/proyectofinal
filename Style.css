@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap');
+
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+
+.logo {
+        border-radius: 50% 20% / 10% 40%;
+        width: 10%; 
+        padding-left: 1%;
+        margin: 1%;
+      }
+
+
+header {
+    background-color:#123B40; 
+    position: sticky;
+    top: 0;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header nav ul li {
+    list-style-type: none;
+    border: 2px solid #D9AB73 ; 
+    border-radius: 1vw ;
+    padding: 1vh;
+    background-color: #81DEAB; 
+    display: inline-block;
+    cursor: pointer;
+
+}
+
+
+.grid-home {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+
+
+}
+
+.grid-home-item {
+    border:#123B40 solid 2px;
+}
+
+
+.imagenes-home img {
+    width: 100%;
+    height: 300px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+h3, h4{
+    color: #123B40;
+    margin: 1vh;
+}
+
+h1 {
+    color: #D9AB73 ; 
+    background-color:#327373; 
+    font-family: 'Cinzel';
+    font-weight: 700;
+    margin: 2vh 0%;
+}
+
+
+
+
+
+
+nav { display: flex;}
+
+
+
+header nav ul li a { 
+    color: #123B40;
+    padding: 2%;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.Menu { 
+
+    font-family:'Cinzel'; 
+    font-weight: 400; }
+
+
+body {
+    background-color: #F2EAD0;
+}
+
+p {font-family: 'Cinzel'; font-size: small }
+
+
+
+ h2 { font-family: 'Cinzel'; 
+    font-weight: bold;
+    margin: 10vh;
+}
+
+footer {background-color: #123B40;
+        color: azure;
+        bottom: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+
+footer p a{color: #123B40 ;
+    background-color: #81DEAB;
+    border: #D9AB73 solid 5px;
+    border-radius: 2vh;
+    align-content: center;
+    padding: 2vh;
+    margin: 15px;
+}
+
+footer ul li {
+
+    padding: 3vh;
+    display: inline-block;
+    cursor: pointer;
+    width: 1vh;
+     }
+
+footer ul li a img{
+
+width: 6vh;
+height: 6vh;
+
+    }
+
+.whatsapp__image {
+    width: 10vh;
+    position: fixed;
+    bottom: 0%;
+    right: 2vh;
+    z-index: 100;
+    
+}
+
+.lista, .botones, .whatsapp {
+    width: 33%;
+}
+ 
+.lista {
+    display: flex
+}
+
+ .botones__botom {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+
+ }
+
+
+.staff { 
+    display: grid;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 15px;
+    gap: 10px
+    ;
+}
+
+
+.staff__miembros {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+border:#123B40 solid 2px;
+
+}   
+
+
+.staff__miembros img {
+
+width: 140px;
+height: 140px;
+border:#123B40 solid 5px;
+object-fit: cover;
+
+}
+
+.staff__miembros p {
+    width: 100%;
+  align-items: center;
+  text-align: center;
+    
+    }
+
+
+    .productos img {
+
+        width: 25vw;
+        height: 30vh;
+    }
+
+
+.intro__empresa {
+
+   
+    background: #123B40;
+    color:#D9AB73;
+    display: flex;
+    justify-content: centrer;
+    align-items: center;
+    align-content: center;
+}
+
+.intro__empresa p {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+    border-bottom: solid 1px red;
+    font-size: large;
+
+}
+
+.intro__mapa {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+    border-bottom: solid 1px red;
+    gap: 40px;
+}
+
+.texto__mapa {
+    display: flex;
+   flex-direction:column;
+   justify-content: center;
+    align-items: center;
+
+}
+
+.productos__piedras__naturales {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.productos__piedras__sinteticas {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.marmoles, .travertinos, .dekton, .neolith {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: auto;
+    border:#123B40 solid 1px;
+    gap: 30px;
+    margin: 5%;
+}
+
+.datos__de__contacto {
+
+    height: 100vh;
+}
+
+.servicio {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    border: #123B40 2px solid;
+    align-content: center;
+    margin: 5%;
+    
+}
+
+.servicio img{
+    width: 40%;
+    height: 400px;
+    display: flex;
+    
+}
+
+.servicio p{
+    width: 50%;
+    display: flex;
+    padding: 5vw;
+    
+}
+
+.datos__de__contacto p{
+
+    font-weight: 700;
+    width: 400px;
+    border: #123B40 solid 2px;
+    text-align: end;
+    margin: 0% 0% 1vh 2vh;
+}
+
+.selectores {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+
+    
+}
+.filtros { 
+
+    border: #123B40 solid 2px;
+    background-color: azure;
+    padding: 0 2%;
+
+}
+
+
+@media only screen and (max-width: 480px) {
+
+    body {
+        background-color: #81DEAB;
+    }
+
+    nav { 
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
