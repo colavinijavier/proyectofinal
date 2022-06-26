@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap');
 
 
-
 *{
     padding: 0%;
     margin: 0%;
 }
-
 
 .logo {
         border-radius: 50% 20% / 10% 40%;
@@ -15,15 +13,26 @@
         margin: 1%;
       }
 
-
 header {
-    background-color:#123B40; 
+    background: linear-gradient(45deg,#123B40, #327373) ;
+    color: #fff;
     position: sticky;
     top: 0;
     padding: 1%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
+    background-size: 400% 400%;
+    animation: cambiar 5s ease infinite;
+    z-index: 100;
+
+}
+
+@keyframes cambiar{
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0 50%;}
 
 }
 
@@ -38,18 +47,20 @@ header nav ul li {
 
 }
 
-
 .grid-home {
     display: grid;
     grid-template-rows: auto auto auto auto;
 
+}
 
+.Menu:hover {
+    transform: scale(1.5);
+    transition: all 1.5s;
 }
 
 .grid-home-item {
     border:#123B40 solid 2px;
 }
-
 
 .imagenes-home img {
     width: 100%;
@@ -78,9 +89,9 @@ h1 {
 
 
 
-
-nav { display: flex;}
-
+nav { 
+    margin-right: 2%;
+    display: flex;}
 
 
 header nav ul li a { 
@@ -95,13 +106,11 @@ header nav ul li a {
     font-family:'Cinzel'; 
     font-weight: 400; }
 
-
 body {
     background-color: #F2EAD0;
 }
 
 p {font-family: 'Cinzel'; font-size: small }
-
 
 
  h2 { font-family: 'Cinzel'; 
@@ -115,7 +124,6 @@ footer {background-color: #123B40;
         display: flex;
         justify-content: space-between;
     }
-
 
 
 footer p a{color: #123B40 ;
@@ -164,9 +172,7 @@ height: 6vh;
     width: 100%;
     justify-content: center;
 
-
  }
-
 
 .staff { 
     display: grid;
@@ -179,7 +185,6 @@ height: 6vh;
     ;
 }
 
-
 .staff__miembros {
 display: flex;
 flex-direction: column;
@@ -188,7 +193,6 @@ align-items: center;
 border:#123B40 solid 2px;
 
 }   
-
 
 .staff__miembros img {
 
@@ -206,13 +210,11 @@ object-fit: cover;
     
     }
 
-
     .productos img {
 
         width: 25vw;
         height: 30vh;
     }
-
 
 .intro__empresa {
 
@@ -261,6 +263,12 @@ object-fit: cover;
 
 }
 
+.Productos__Imagen {
+    width: 20%;
+    height: 20%;
+
+}
+
 .productos__piedras__sinteticas {
 
     display: flex;
@@ -277,12 +285,15 @@ object-fit: cover;
     border:#123B40 solid 1px;
     gap: 30px;
     margin: 5%;
+    padding: 2%;
 }
 
 .datos__de__contacto {
 
-    height: 100vh;
+    height: 35vh;
 }
+
+
 
 .servicio {
     width: 90%;
@@ -308,14 +319,50 @@ object-fit: cover;
     
 }
 
+.datos__de__contacto:hover .datos__de__cotacto__1,
+.datos__de__contacto:hover .datos__de__cotacto__2,
+.datos__de__contacto:hover .datos__de__cotacto__3,
+.datos__de__contacto:hover .datos__de__cotacto__4,
+.datos__de__contacto:hover .datos__de__cotacto__5,
+.datos__de__contacto:hover .datos__de__cotacto__6 {
+    transform: translateX(300px);
+}
+
+.datos__de__cotacto__1 {
+    transition:all 1.5s ease-in;
+}
+.datos__de__cotacto__2 {
+    transition:all 1.5s ease-in-out;
+}
+.datos__de__cotacto__3 {
+    transition:all 1.5s ease-out;
+}
+.datos__de__cotacto__4 {
+    transition:all 1.5s ease-out;
+}
+.datos__de__cotacto__5 {
+    transition:all 1.5s ease-in-out;
+}
+.datos__de__cotacto__6 {
+    transition:all 1.5s ease-in;
+}
+
+
+
+
 .datos__de__contacto p{
 
     font-weight: 700;
-    width: 400px;
+    width: 300px;
     border: #123B40 solid 2px;
     text-align: end;
-    margin: 0% 0% 1vh 2vh;
+    color: #D9AB73 ; 
+    background-color:#327373; 
+    font-family: 'Cinzel';
+    margin: 10px;
+
 }
+
 
 .selectores {
     width: 100%;
@@ -332,7 +379,6 @@ object-fit: cover;
     padding: 0 2%;
 
 }
-
 
 @media only screen and (max-width: 480px) {
 
