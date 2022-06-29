@@ -1,32 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap');
 
 
-*{
-    padding: 0%;
-    margin: 0%;
-}
-
-.logo {
-        border-radius: 50% 20% / 10% 40%;
-        width: 10%; 
-        padding-left: 1%;
-        margin: 1%;
-      }
 
 header {
-    background: linear-gradient(45deg,#123B40, #327373) ;
-    color: #fff;
-    position: sticky;
-    top: 0;
-    padding: 1%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    background: linear-gradient(45deg,#123B40, #327373);
     width: 100%;
     background-size: 400% 400%;
     animation: cambiar 5s ease infinite;
-    z-index: 100;
+}
 
+.nav-item a {
+    color: aliceblue;
 }
 
 @keyframes cambiar{
@@ -36,16 +20,7 @@ header {
 
 }
 
-header nav ul li {
-    list-style-type: none;
-    border: 2px solid #D9AB73 ; 
-    border-radius: 1vw ;
-    padding: 1vh;
-    background-color: #81DEAB; 
-    display: inline-block;
-    cursor: pointer;
 
-}
 
 .grid-home {
     display: grid;
