@@ -1,3 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap");
+header {
+  background: linear-gradient(45deg, #123B40, #327373);
+  width: 100%;
+  background-size: 400% 400%;
+  animation: cambiar 5s ease infinite;
+}
+@keyframes cambiar {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+header nav {
+  margin-right: 2%;
+  display: flex;
+}
+header nav ul li a {
+  color: #123B40;
+  padding: 2%;
+  align-items: center;
+  margin: 0 10px;
+}
+header nav .nav-item a {
+  color: aliceblue;
+}
 
+.grid-home {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+}
+
+.imagenes-home img {
+  width: 100%;
+  height: 500px;
+}
+
+.grid-home-item {
+  border: #123B40 solid 2px;
+}
+
+body {
+  background-color: #F2EAD0;
+}
+
+h1 {
+  color: #D9AB73;
+  background-color: #327373;
+  font-family: "Cinzel";
+  font-weight: 700;
+  margin: 2vh 0%;
+}
+
+h2 {
+  font-family: "Cinzel";
+  font-weight: bold;
+  margin: 10vh;
+}
+
+h3, h4 {
+  color: #123B40;
+  margin: 1vh;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+p {
+  font-family: "Cinzel";
+  font-size: small;
+}
+
+footer {
+  background-color: #123B40;
+  color: azure;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+}
+footer ul li {
+  padding: 3vh;
+  display: inline-block;
+  cursor: pointer;
+  width: 1vh;
+}
+footer ul li img {
+  width: 6vh;
+  height: 6vh;
+}
+footer p a {
+  color: #123B40;
+  background-color: #81DEAB;
+  border: #D9AB73 solid 5px;
+  border-radius: 2vh;
+  align-content: center;
+  padding: 2vh;
+  margin: 15px;
+}
+
+.whatsapp__image {
+  width: 10vh;
+  position: fixed;
+  bottom: 0%;
+  right: 2vh;
+  z-index: 100;
+}
+
+.lista, .botones, .whatsapp {
+  width: 33%;
+}
+
+.lista {
+  display: flex;
+}
+
+.botones__botom {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
 
 /*# sourceMappingURL=style.css.map */
